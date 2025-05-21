@@ -35,6 +35,7 @@ export function ImageCarousel({
           className="object-cover object-center w-full h-full"
           priority
           sizes="100vw"
+          quality={90}
         />
       </div>
 
@@ -50,6 +51,7 @@ export function ImageCarousel({
           fill
           className="object-cover object-center w-full h-full"
           sizes="100vw"
+          quality={90}
         />
       </div>
 

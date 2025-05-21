@@ -11,10 +11,12 @@ export function Navigation() {
   const [isMenuOpen, toggleMenu, setMenuOpen] = useToggle(false)
 
   return (
-    <nav className="w-full bg-primary-500 text-white shadow-md py-4 sticky top-0 z-50">
-      <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center">
-          <Logo />
+    <nav className="w-full bg-primary-500 text-white shadow-md sticky top-0 z-50 h-16">
+      <div className="container mx-auto px-4 h-full">
+        <div className="flex justify-between items-center h-full">
+          <div className="flex-shrink-0 mr-4 max-w-[320px]">
+            <Logo />
+          </div>
 
           {/* Mobile menu button */}
           <button

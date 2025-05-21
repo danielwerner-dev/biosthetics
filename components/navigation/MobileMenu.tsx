@@ -22,7 +22,7 @@ export function MobileMenu({ links, isOpen, onLinkClick }: MobileMenuProps) {
             {link.hasDropdown ? (
               <Link
                 href={link.href}
-                className="text-white hover:text-primary-100 transition-colors"
+                className="text-white hover:text-primary-100 transition-colors flex items-center py-2"
                 onClick={onLinkClick}
               >
                 {link.title}
@@ -30,7 +30,7 @@ export function MobileMenu({ links, isOpen, onLinkClick }: MobileMenuProps) {
             ) : (
               <Link
                 href={link.href}
-                className="text-white hover:text-primary-100 transition-colors"
+                className="text-white hover:text-primary-100 transition-colors flex items-center py-2"
                 onClick={onLinkClick}
               >
                 {link.title}

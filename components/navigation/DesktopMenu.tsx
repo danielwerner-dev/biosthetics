@@ -7,9 +7,9 @@ interface DesktopMenuProps {
 
 export function DesktopMenu({ links }: DesktopMenuProps) {
   return (
-    <div className="hidden md:flex flex-wrap justify-center gap-4 md:gap-6 text-sm font-medium">
+    <div className="hidden md:flex flex-wrap items-center justify-end flex-1 gap-4 md:gap-6 text-sm font-medium h-full">
       {links.map((link, index) => (
-        <div key={index} className={link.hasDropdown ? "relative group" : ""}>
+        <div key={index} className={`${link.hasDropdown ? "relative group" : ""} h-full flex items-center`}>
           {link.hasDropdown ? (
             <Link href={link.href} className="text-white hover:text-primary-100 transition-colors">
               {link.title}
