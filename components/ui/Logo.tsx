@@ -1,5 +1,5 @@
-import Link from "next/link"
 import Image from "next/image"
+import Link from "next/link"
 
 interface LogoProps {
   className?: string
@@ -12,8 +12,8 @@ export function Logo({ className = "" }: LogoProps) {
         <Image
           src="/images/logo.svg"
           alt="Biosthetics Logo"
-          width={280}
-          height={60}
+          width={400}
+          height={177}
           className="h-12 sm:h-14 w-auto brightness-0 invert"
           priority
         />
