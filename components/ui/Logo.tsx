@@ -10,12 +10,11 @@ export function Logo({ className = "" }: LogoProps) {
     <Link href="/" className={`flex items-center ${className}`}>
       <div className="flex items-center">
         <Image
-          src="/images/logo.png"
+          src="/images/logo.svg"
           alt="Biosthetics Logo"
-          width={168}
-          height={74}
-          className="w-auto h-auto max-w-[220px] sm:max-w-[280px] md:max-w-[320px]"
-          sizes="(max-width: 300px) 100vw, 300px"
+          width={280}
+          height={60}
+          className="h-12 sm:h-14 w-auto brightness-0 invert"
           priority
         />
       </div>
