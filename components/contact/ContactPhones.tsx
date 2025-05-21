@@ -1,0 +1,60 @@
+import { CONTACT_INFO, SITE_CONFIG } from "@/constants"
+
+export function ContactPhones() {
+  return (
+    <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
+      {/* Regular Phone */}
+      <div className="flex items-center gap-2 sm:gap-3">
+        <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full border border-primary-500 flex items-center justify-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="12"
+            height="12"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="text-primary-500 sm:w-4 sm:h-4"
+          >
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+          </svg>
+        </div>
+        <a
+          href={`tel:${CONTACT_INFO.phone.replace(/\D/g, "")}`}
+          className="text-primary-500 text-base sm:text-lg hover:underline"
+        >
+          {CONTACT_INFO.phone}
+        </a>
+      </div>
+
+      {/* WhatsApp */}
+      <div className="flex items-center gap-2 sm:gap-3">
+        <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full border border-primary-500 flex items-center justify-center">
+          <div className="relative w-4 h-4 sm:w-5 sm:h-5 text-primary-500">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 1219.547 1225.016"
+              fill="currentColor"
+              className="sm:w-5 sm:h-5"
+            >
+              <path d="M1041.858 178.02C927.206 63.289 774.753.07 612.325 0 277.617 0 5.232 272.298 5.098 606.991c-.039 106.986 27.915 211.42 81.048 303.476L0 1225.016l321.898-84.406c88.689 48.368 188.547 73.855 290.166 73.896h.258.003c334.654 0 607.08-272.346 607.222-607.023.056-162.208-63.052-314.724-177.689-429.463zm-429.533 933.963h-.197c-90.578-.048-179.402-24.366-256.878-70.339l-18.438-10.93-191.021 50.083 51-186.176-12.013-19.087c-50.525-80.336-77.198-173.175-77.16-268.504.111-278.186 226.507-504.503 504.898-504.503 134.812.056 261.519 52.604 356.814 147.965 95.289 95.36 147.728 222.128 147.688 356.948-.118 278.195-226.522 504.543-504.693 504.543z" />
+              <path d="M886.527 668.953c-15.227-7.592-90.157-44.51-104.147-49.587-13.99-5.092-24.172-7.63-34.341 7.593-10.169 15.229-39.357 49.586-48.272 59.77-8.906 10.17-17.805 11.45-33.033 3.843-15.229-7.599-64.308-23.7-122.5-75.59-45.29-40.392-75.858-90.24-84.78-105.484-8.922-15.23-.894-23.462 6.707-31.08 6.876-6.835 15.23-17.803 22.844-26.717 7.614-8.914 10.169-15.235 15.234-25.395 5.065-10.17 2.518-19.084-1.27-26.684-3.787-7.6-34.328-82.725-47.065-113.302-12.39-29.718-24.976-25.695-34.333-26.158-8.901-.453-19.08-.543-29.249-.543-10.169 0-26.683 3.797-40.668 19.027-13.99 15.229-53.335 52.145-53.335 127.101s54.627 147.317 62.241 157.487c7.615 10.17 107.47 164.006 260.394 230.01 36.4 15.71 64.793 25.064 86.919 32.072 36.527 11.594 69.8 9.97 96.072 6.052 29.282-4.386 90.157-36.877 102.894-72.488 12.736-35.611 12.736-66.138 8.922-72.492-3.787-6.35-13.992-10.17-29.22-17.785z" />
+            </svg>
+          </div>
+        </div>
+        <a
+          href={SITE_CONFIG.whatsappLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary-500 text-base sm:text-lg hover:underline"
+        >
+          {CONTACT_INFO.mobile}
+        </a>
+      </div>
+    </div>
+  )
+}

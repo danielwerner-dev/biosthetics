@@ -23,7 +23,7 @@ const config: Config = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
+          DEFAULT: "#30324B",
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
@@ -89,6 +89,19 @@ const config: Config = {
           800: "#1A4F54",
           900: "#123538",
           accent: "#FF7E67", // Coral Suave
+        },
+        // Nova paleta principal
+        primary: {
+          50: "#EDEDF2",
+          100: "#DBDBE5",
+          200: "#B7B8CC",
+          300: "#9395B2",
+          400: "#6F7199",
+          500: "#30324B", // Cor principal
+          600: "#292A40",
+          700: "#222336",
+          800: "#1B1C2B",
+          900: "#141521",
         },
         borderRadius: {
           lg: "var(--radius)",

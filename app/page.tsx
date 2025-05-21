@@ -1,7 +1,7 @@
-import { Navigation } from "@/components/navigation"
-import { Hero } from "@/components/hero"
-import { ContactSection } from "@/components/contact-section"
-import { Footer } from "@/components/footer"
+import { Navigation } from "@/components/navigation/Navigation"
+import { Hero } from "@/components/hero/Hero"
+import { ContactSection } from "@/components/contact/ContactSection"
+import { Footer } from "@/components/footer/Footer"
 
 export default function Home() {
   return (

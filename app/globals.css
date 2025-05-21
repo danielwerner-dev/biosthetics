@@ -63,6 +63,14 @@ body {
     animation-delay: 700ms;
   }
 
+  .animation-delay-900 {
+    animation-delay: 900ms;
+  }
+
+  .animation-delay-1100 {
+    animation-delay: 1100ms;
+  }
+
   .duration-1000 {
     transition-duration: 1000ms;
   }
@@ -87,8 +95,53 @@ body {
   }
 }
 
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .animate-fadeIn {
   animation: fadeIn 1s ease-out forwards;
+}
+
+.animate-zoomIn {
+  animation: zoomIn 1.2s ease-out forwards;
+}
+
+.animate-zoomOut {
+  animation: zoomOut 1.2s ease-out forwards;
+}
+
+.animate-slideDown {
+  animation: slideDown 0.8s ease-out forwards;
 }
 
 @layer base {
