@@ -1,4 +1,4 @@
-import { Phone, MapPin, Facebook, Instagram, Youtube } from "lucide-react"
+import { Phone, MapPin, Facebook, Instagram } from "lucide-react"
 import Link from "next/link"
 
 export function TopBar() {
@@ -26,9 +26,6 @@ export function TopBar() {
             </Link>
             <Link href="#" aria-label="Instagram">
               <Instagram size={18} color="white" />
-            </Link>
-            <Link href="#" aria-label="Youtube">
-              <Youtube size={18} color="white" />
             </Link>
           </div>
         </div>

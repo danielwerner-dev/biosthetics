@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Youtube, Twitter, Linkedin } from "lucide-react"
+import { Facebook, Instagram, Twitter, Linkedin } from "lucide-react"
 import Link from "next/link"
 import type { SocialMedia } from "@/types"
 
@@ -15,8 +15,6 @@ export function SocialIcon({ social, size = 20, className = "" }: SocialIconProp
         return <Facebook size={size} />
       case "instagram":
         return <Instagram size={size} />
-      case "youtube":
-        return <Youtube size={size} />
       case "twitter":
         return <Twitter size={size} />
       case "linkedin":

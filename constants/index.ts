@@ -41,9 +41,11 @@ export const NAV_LINKS: NavLink[] = [
 
 // Redes sociais
 export const SOCIAL_MEDIA: SocialMedia[] = [
-  { platform: "facebook", url: "#" },
-  { platform: "instagram", url: "#" },
-  { platform: "youtube", url: "#" },
+  {
+    platform: "facebook",
+    url: "https://www.facebook.com/people/Bioesthetics-Odontologia-Est%C3%A9tica-Restauradora/100063773071371/#",
+  },
+  { platform: "instagram", url: "https://www.instagram.com/bioestheticsclinica/" },
 ]
 
 // Configurações do site

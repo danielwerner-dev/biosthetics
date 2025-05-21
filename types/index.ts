@@ -30,4 +30,5 @@ export interface NavLink {
 export interface SocialMedia {
   platform: "facebook" | "instagram" | "youtube" | "twitter" | "linkedin"
   url: string
+  className?: string
 }

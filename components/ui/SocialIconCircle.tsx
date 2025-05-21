@@ -1,6 +1,6 @@
 import type { SocialMedia } from "@/types"
 import Link from "next/link"
-import { Facebook, Instagram, Youtube, Twitter, Linkedin } from "lucide-react"
+import { Facebook, Instagram, Twitter, Linkedin } from "lucide-react"
 
 interface SocialIconCircleProps {
   social: SocialMedia
@@ -17,8 +17,6 @@ export function SocialIconCircle({ social, size = "md", className = "" }: Social
         return <Facebook size={iconSize} />
       case "instagram":
         return <Instagram size={iconSize} />
-      case "youtube":
-        return <Youtube size={iconSize} />
       case "twitter":
         return <Twitter size={iconSize} />
       case "linkedin":

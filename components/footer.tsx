@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Phone, MapPin, Mail, Clock, Facebook, Instagram, Youtube } from "lucide-react"
+import { Phone, MapPin, Mail, Clock, Facebook, Instagram } from "lucide-react"
 
 export function Footer() {
   return (
@@ -20,9 +20,6 @@ export function Footer() {
               </Link>
               <Link href="#" aria-label="Instagram" className="hover:text-clinical-100 transition-colors">
                 <Instagram size={18} className="text-white" />
-              </Link>
-              <Link href="#" aria-label="Youtube" className="hover:text-clinical-100 transition-colors">
-                <Youtube size={18} className="text-white" />
               </Link>
             </div>
           </div>
