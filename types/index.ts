@@ -24,6 +24,10 @@ export interface NavLink {
   title: string
   href: string
   hasDropdown?: boolean
+  dropdownItems?: {
+    title: string
+    href: string
+  }[]
 }
 
 // Tipos para redes sociais

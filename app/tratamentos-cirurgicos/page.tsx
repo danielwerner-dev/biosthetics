@@ -15,7 +15,7 @@ export default function TratamentosCirurgicosPage() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-500 mb-8 text-center">
-            Tratamentos Cirúrgicos
+            Procedimentos Cirúrgicos
           </h1>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto text-center mb-12">
             Oferecemos procedimentos cirúrgicos avançados com foco em resultados naturais e seguros, realizados por

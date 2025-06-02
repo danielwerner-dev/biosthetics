@@ -20,7 +20,7 @@ export function ContactSection() {
 
       <div className="container mx-auto px-4 relative">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary-500 mb-6 sm:mb-8 md:mb-10">
-          Entre em Contato:
+          Localização:
         </h2>
 
         <div className="max-w-4xl">

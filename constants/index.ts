@@ -32,18 +32,33 @@ export const BUSINESS_HOURS: BusinessHours = {
 
 // Links de navegação
 export const NAV_LINKS: NavLink[] = [
-  { title: "INÍCIO", href: "/" },
-  { title: "DR. RICARDO HEINE", href: "/dr-ricardo-heine" },
-  { title: "DRA. MILCA HEINE", href: "/dra-milca-heine" },
-  { title: "TRATAMENTOS CIRÚRGICOS", href: "/tratamentos-cirurgicos", hasDropdown: false },
-  { title: "TRATAMENTOS NÃO CIRÚRGICOS", href: "/tratamentos-nao-cirurgicos", hasDropdown: false },
+  { title: "BIOSTHETICS", href: "/biosthetics" },
+  {
+    title: "PROFISSIONAIS",
+    href: "#",
+    hasDropdown: true,
+    dropdownItems: [
+      { title: "DR. RICARDO HEINE", href: "/dr-ricardo-heine" },
+      { title: "DRA. MILCA HEINE", href: "/dra-milca-heine" },
+    ],
+  },
+  {
+    title: "PROCEDIMENTOS",
+    href: "#",
+    hasDropdown: true,
+    dropdownItems: [
+      { title: "PROCEDIMENTOS CIRÚRGICOS", href: "/tratamentos-cirurgicos" },
+      { title: "PROCEDIMENTOS NÃO CIRÚRGICOS", href: "/tratamentos-nao-cirurgicos" },
+    ],
+  },
+  { title: "LOCALIZAÇÃO", href: "/localizacao" },
 ]
 
 // Redes sociais
 export const SOCIAL_MEDIA: SocialMedia[] = [
   {
     platform: "facebook",
-    url: "https://www.facebook.com/people/Bioesthetics-Odontologia-Est%C3%A9tica-Restauradora/100063773071371/#",
+    url: "https://www.facebook.com/people/Bioesthetics-Odontologia-Est%C3%A3tica-Restauradora/100063773071371/#",
   },
   { platform: "instagram", url: "https://www.instagram.com/bioestheticsclinica/" },
 ]

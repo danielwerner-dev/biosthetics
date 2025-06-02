@@ -15,7 +15,7 @@ export default function DrRicardoHeinePage() {
         name="Dr. Ricardo Heine"
         credentials="CRO-RS 12.345 | RQE 67.890"
         image="/images/dr-ricardo.png"
-        imageAlt="Dr. Ricardo Heine"
+        imageAlt="Dr. Ricardo Heine - Especialista em Odontologia Estética e Restauradora"
       />
       <Footer />
     </main>

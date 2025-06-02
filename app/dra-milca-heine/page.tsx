@@ -15,7 +15,7 @@ export default function DraMilcaHeinePage() {
         name="Dra. Milca Heine"
         credentials="CRO-RS 13.456 | RQE 78.901"
         image="/images/dr-milca.png"
-        imageAlt="Dra. Milca Heine"
+        imageAlt="Dra. Milca Heine - Especialista em Odontologia Estética e Restauradora"
         specialties={[
           "Odontologia Estética",
           "Lentes de Contato Dental",

@@ -10,7 +10,7 @@ export function Logo({ className = "" }: LogoProps) {
     <Link href="/" className={`flex items-center ${className}`}>
       <div className="flex items-center">
         <Image
-          src="/images/logo.svg"
+          src="/images/logo.png"
           alt="Biosthetics Logo"
           width={400}
           height={177}

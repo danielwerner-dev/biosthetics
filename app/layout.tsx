@@ -5,7 +5,7 @@ import "./globals.css"
 export const metadata: Metadata = {
   title: "BIOSTHETICS - Estética Avançada e Bem-estar",
   description: "Tratamentos estéticos avançados e soluções personalizadas para realçar sua beleza natural",
-    generator: 'v0.dev'
+  generator: "v0.dev",
 }
 
 export default function RootLayout({
