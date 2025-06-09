@@ -8,7 +8,7 @@ export function HeroContent() {
           {SITE_CONFIG.name}
         </h1>
         <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-4 sm:mb-6 animate-fadeIn animation-delay-300">
-          {SITE_CONFIG.description}
+          Odontologia Biológica Cirurgias Estéticas Faciais
         </p>
       </div>
     </div>

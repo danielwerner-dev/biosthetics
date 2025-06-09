@@ -22,10 +22,10 @@ export function BioestheticsSection() {
           {/* Header */}
           <div className="text-center mb-16">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-primary-500 mb-6">
-              Bioesthetics Odontologia - Estética - Restauradora
+              Bioesthetics Odontologia Biológica Cirurgias Estéticas Faciais
             </h1>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-primary-400 mb-8">
-              Excelência em Odontologia Estética e Restauradora
+              Excelência em Odontologia e Estética Facial
             </h2>
           </div>
 
@@ -34,11 +34,23 @@ export function BioestheticsSection() {
             {/* Text Content */}
             <div className="space-y-8">
               <div className="prose prose-lg max-w-none">
-                <p className="text-xl leading-relaxed text-gray-700 mb-6">
-                  <strong className="text-primary-500">Transformamos sorrisos</strong> com técnica, arte e cuidado. Na
-                  Bioesthetics Odontologia - Estética - Restauradora, cada detalhe importa — da saúde bucal à harmonia
-                  facial.
-                </p>
+                <div className="space-y-4 mb-6">
+                  <p className="text-xl leading-relaxed text-gray-700">
+                    <strong className="text-primary-500">Sorrisos que revelam elegância, saúde e autenticidade.</strong>
+                  </p>
+                  <p className="text-lg leading-relaxed text-gray-700">
+                    Na Bioesthetics, Odontologia & Estética, unimos precisão técnica, sensibilidade estética e um olhar
+                    atento aos detalhes que importam — da saúde bucal à harmonia facial.
+                  </p>
+                  <p className="text-lg leading-relaxed text-gray-700">
+                    Cada tratamento é cuidadosamente planejado para atender às necessidades únicas de quem valoriza a
+                    discrição, o bem-estar e resultados verdadeiramente naturais.
+                  </p>
+                  <p className="text-lg leading-relaxed text-gray-700">
+                    Receba um cuidado exclusivo, em um ambiente onde a excelência clínica encontra o conforto, e o tempo
+                    é dedicado a você.
+                  </p>
+                </div>
 
                 <p className="text-lg leading-relaxed text-gray-700 mb-6">
                   Oferecemos <strong className="text-primary-500">tratamentos personalizados</strong> em um ambiente
@@ -48,8 +60,16 @@ export function BioestheticsSection() {
                 <div className="bg-primary-50 p-6 rounded-lg border-l-4 border-primary-500">
                   <h3 className="text-xl font-semibold text-primary-500 mb-4">Nossa Missão</h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Proporcionar excelência em odontologia estética e restauradora, combinando técnicas avançadas com um
-                    atendimento humanizado, sempre priorizando a saúde, o bem-estar e a satisfação de nossos pacientes.
+                    Oferecer excelência em odontologia estética e facial por meio de técnicas avançadas, tecnologia de
+                    ponta e uma abordagem profundamente personalizada.
+                  </p>
+                  <p className="text-gray-700 leading-relaxed mt-3">
+                    Na Bioesthetics, cada sorriso é tratado como único — com atenção aos detalhes, sofisticação no
+                    cuidado e compromisso com resultados naturais, duradouros e harmoniosos.
+                  </p>
+                  <p className="text-gray-700 leading-relaxed mt-3">
+                    Mais do que transformar sorrisos, cultivamos experiências de bem-estar, confiança e beleza
+                    verdadeira.
                   </p>
                 </div>
               </div>
@@ -92,7 +112,7 @@ export function BioestheticsSection() {
           {/* Features Grid */}
           <div className="mt-20">
             <h3 className="text-3xl font-bold text-primary-500 text-center mb-12">
-              Por que escolher a Bioesthetics Odontologia - Estética - Restauradora?
+              Por que escolher a Bioesthetics Odontologia Biológica Cirurgias Estéticas Faciais?
             </h3>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -109,7 +129,8 @@ export function BioestheticsSection() {
                 </div>
                 <h4 className="text-xl font-semibold text-primary-500 mb-3">Excelência Técnica</h4>
                 <p className="text-gray-700">
-                  Profissionais altamente qualificados com anos de experiência em odontologia estética e restauradora.
+                  Profissionais altamente qualificados com anos de experiência em odontologia biológica e cirurgias
+                  estéticas faciais. CRO-RS 7471
                 </p>
               </div>
 

@@ -18,14 +18,14 @@ export function DesktopMenu({ links }: DesktopMenuProps) {
                 <ChevronDown size={16} className="group-hover:rotate-180 transition-transform duration-200" />
               </button>
 
-              {/* Dropdown Menu */}
+              {/* Dropdown Menu - Auto Height */}
               <div className="absolute top-full left-0 mt-0 w-56 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-200">
                 <div className="py-2">
                   {link.dropdownItems?.map((item, itemIndex) => (
                     <Link
                       key={itemIndex}
                       href={item.href}
-                      className="block px-4 py-3 text-gray-700 hover:bg-primary-50 hover:text-primary-600 transition-colors text-sm font-medium"
+                      className="block px-4 py-3 text-gray-700 hover:bg-[#1E2C44] hover:text-white transition-all duration-200 text-sm font-medium border-b border-gray-100 last:border-b-0"
                     >
                       {item.title}
                     </Link>

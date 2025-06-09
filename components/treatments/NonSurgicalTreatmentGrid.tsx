@@ -2,15 +2,17 @@ import { NonSurgicalTreatmentCard } from "./NonSurgicalTreatmentCard"
 
 export function NonSurgicalTreatmentGrid() {
   const treatments = [
-    {
-      id: "cosmiatria",
-      title: "Cosmiatria",
-      description: "Tratamentos estéticos para a pele e seus anexos",
-      image: "/images/treatments/cosmiatria.png",
-      imagePosition: "center",
-    },
-    // Aqui você pode adicionar mais tratamentos não cirúrgicos no futuro
+    // No treatments currently - cosmiatria has been removed
+    // Future non-surgical treatments can be added here
   ]
+
+  if (treatments.length === 0) {
+    return (
+      <div className="text-center py-12">
+        <p className="text-gray-600 text-lg">Novos tratamentos não cirúrgicos serão adicionados em breve.</p>
+      </div>
+    )
+  }
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

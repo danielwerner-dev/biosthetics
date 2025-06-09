@@ -15,6 +15,9 @@ export function StickyImage({ src, alt, className = "", imageContain = false }: 
   const [containerHeight, setContainerHeight] = useState(0)
   const [topOffset, setTopOffset] = useState(0)
 
+  // Check if this is the cervicoplastia image
+  const isCervicoplastia = src && src.includes("cervicoplastia.png")
+
   // Calcula a altura do container pai e configura o offset correto para o sticky
   useEffect(() => {
     if (!containerRef.current) return
@@ -56,6 +59,34 @@ export function StickyImage({ src, alt, className = "", imageContain = false }: 
     return () => window.removeEventListener("resize", handleResize)
   }, [])
 
+  if (isCervicoplastia) {
+    // Special handling for cervicoplastia image to prevent cropping
+    return (
+      <div
+        ref={containerRef}
+        className={`relative ${className}`}
+        style={{ height: containerHeight > 0 ? `${containerHeight}px` : "500px" }}
+      >
+        <div
+          className="sticky w-full h-80 sm:h-96 lg:h-[500px] rounded-lg overflow-hidden bg-gray-100 flex items-center justify-center"
+          style={{ top: `${topOffset}px` }}
+        >
+          <div className="relative w-[90%] h-[90%] mx-auto">
+            <Image
+              src={src || "/placeholder.svg"}
+              alt={alt}
+              fill
+              className="object-contain"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              priority
+            />
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  // Default handling for other images
   return (
     <div
       ref={containerRef}

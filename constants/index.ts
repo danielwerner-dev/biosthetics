@@ -19,7 +19,7 @@ export const CAROUSEL_IMAGES: CarouselImage[] = [
 // Informações de contato
 export const CONTACT_INFO: ContactInfo = {
   phone: "(51) 3592-7824",
-  mobile: "(51) 992997401",
+  mobile: "(51) 999763575",
   email: "contato@biosthetics.com.br",
   address: "R. Bento Gonçalves, 806 - Andar B Sala 1 - Centro, São Leopoldo RS",
 }
@@ -40,6 +40,7 @@ export const NAV_LINKS: NavLink[] = [
     dropdownItems: [
       { title: "DR. RICARDO HEINE", href: "/dr-ricardo-heine" },
       { title: "DRA. MILCA HEINE", href: "/dra-milca-heine" },
+      { title: "ENF. MARCO GOMEZ", href: "/enf-marco-gomez" },
     ],
   },
   {
@@ -47,8 +48,10 @@ export const NAV_LINKS: NavLink[] = [
     href: "#",
     hasDropdown: true,
     dropdownItems: [
-      { title: "PROCEDIMENTOS CIRÚRGICOS", href: "/tratamentos-cirurgicos" },
-      { title: "PROCEDIMENTOS NÃO CIRÚRGICOS", href: "/tratamentos-nao-cirurgicos" },
+      { title: "CIRURGIAS ESTÉTICAS FACIAIS", href: "/procedimentos/cirurgias-esteticas-faciais" },
+      { title: "HARMONIZAÇÃO ORO FACIAL", href: "/procedimentos/harmonizacao-oro-facial" },
+      { title: "ODONTOLOGIA BIOLÓGICA", href: "/procedimentos/odontologia-biologica" },
+      { title: "ODONTOLOGIA ESTÉTICA & RESTAURADORA", href: "/procedimentos/odontologia-estetica-restauradora" },
     ],
   },
   { title: "LOCALIZAÇÃO", href: "/localizacao" },
@@ -68,7 +71,7 @@ export const SITE_CONFIG = {
   name: "BIOSTHETICS",
   description: "Odontologia Estética e Restauradora",
   developer: "DW Consultoria",
-  whatsappNumber: "5551992997401",
+  whatsappNumber: "5551999763575",
   whatsappMessage: "Olá! Gostaria de agendar uma consulta de avaliação ou tirar dúvidas",
   get whatsappLink() {
     return `https://wa.me/${this.whatsappNumber}?text=${encodeURIComponent(this.whatsappMessage)}`

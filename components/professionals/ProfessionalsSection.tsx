@@ -12,8 +12,9 @@ export function ProfessionalsSection() {
   const doctors = [
     {
       name: "Dr. Ricardo Heine",
-      credentials: "CRO-RS 12.345 | RQE 67.890",
+      credentials: "CRO-RS 6627",
       image: "/images/dr-ricardo.png",
+      objectPosition: "object-top",
       specialties: [
         "Reabilitação Oral",
         "Implantodontia",
@@ -25,18 +26,34 @@ export function ProfessionalsSection() {
       profileLink: "/dr-ricardo-heine",
     },
     {
-      name: "Dra. Milca Heine",
-      credentials: "CRO-RS 13.456 | RQE 78.901",
+      name: "Dra. Milca Kley Silva",
+      credentials: "CRO-RS 7471",
       image: "/images/dr-milca.png",
+      objectPosition: "object-top",
       specialties: [
         "Odontologia Estética",
         "Lentes de Contato Dental",
         "Facetas de Porcelana",
         "Clareamento Dental",
         "Harmonização Facial",
-        "Toxina Botulínica",
+        "Toxina Botolínica",
       ],
-      profileLink: "/dra-milca-heine",
+      profileLink: "/dra-milca-kley",
+    },
+    {
+      name: "Enf. Marco Gomez",
+      credentials: "COREN-RS 690113",
+      image: "/images/marco-gomez.jpeg",
+      objectPosition: "object-center",
+      specialties: [
+        "Procedimentos Estéticos",
+        "Harmonização Facial",
+        "Toxina Botulínica",
+        "Ácido Hialurônico",
+        "Bioestimuladores",
+        "Cuidados Pós-Operatórios",
+      ],
+      profileLink: "/enf-marco-gomez",
     },
   ]
 
@@ -58,14 +75,14 @@ export function ProfessionalsSection() {
           </div>
 
           {/* Doctors Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-12">
             {doctors.map((doctor) => (
               <div
                 key={doctor.name}
                 className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
               >
                 {/* Doctor Image */}
-                <div className="relative h-80 sm:h-96 bg-gray-100">
+                <div className="relative h-[420px] sm:h-[500px] bg-gray-100">
                   {imageErrors[doctor.name] ? (
                     <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary-100 to-primary-200">
                       <div className="text-center">
@@ -86,8 +103,8 @@ export function ProfessionalsSection() {
                       src={doctor.image || "/placeholder.svg"}
                       alt={`${doctor.name} - Profissional da Bioesthetics Odontologia`}
                       fill
-                      className="object-cover object-center"
-                      sizes="(max-width: 1024px) 100vw, 50vw"
+                      className={`object-cover ${doctor.objectPosition || "object-center"}`}
+                      sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 50vw, 33vw"
                       onError={() => handleImageError(doctor.name)}
                     />
                   )}

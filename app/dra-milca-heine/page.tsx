@@ -13,7 +13,7 @@ export default function DraMilcaHeinePage() {
       <Navigation />
       <DoctorProfile
         name="Dra. Milca Heine"
-        credentials="CRO-RS 13.456 | RQE 78.901"
+        credentials="CRO-RS 7471"
         image="/images/dr-milca.png"
         imageAlt="Dra. Milca Heine - Especialista em Odontologia Estética e Restauradora"
         specialties={[

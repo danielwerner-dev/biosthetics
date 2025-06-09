@@ -23,7 +23,17 @@ const config: Config = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#30324B",
+          50: "#F8F9FB",
+          100: "#F1F3F7",
+          200: "#E3E7EF",
+          300: "#D5DBE7",
+          400: "#C7CFDF",
+          500: "#2C3E5C", // Main Sophisticated Navy
+          600: "#253550",
+          700: "#1E2C44",
+          800: "#172338",
+          900: "#101A2C",
+          DEFAULT: "#2C3E5C",
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
@@ -50,64 +60,64 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Paleta Azul Clínico
-        clinical: {
-          50: "#F0F7FF", // Azul Claríssimo
-          100: "#F5F9FC", // Azul Gelo
-          200: "#E1EFFF",
-          300: "#C3DFFF",
-          400: "#93C5FD",
-          500: "#4A90E2", // Azul Médio
-          600: "#3B82F6",
-          700: "#2C5282", // Azul Profundo
-          800: "#1E3A5F",
-          900: "#172B46",
+        // Sophisticated Navy Palette
+        navy: {
+          50: "#F8F9FB",
+          100: "#F1F3F7",
+          200: "#E3E7EF",
+          300: "#D5DBE7",
+          400: "#C7CFDF",
+          500: "#2C3E5C", // Sophisticated Navy
+          600: "#253550",
+          700: "#1E2C44",
+          800: "#172338",
+          900: "#101A2C",
         },
-        // Paleta Verde Menta
+        // Paleta Azul Clínico (updated to complement navy)
+        clinical: {
+          50: "#F8F9FB",
+          100: "#F1F3F7",
+          200: "#E3E7EF",
+          300: "#D5DBE7",
+          400: "#C7CFDF",
+          500: "#2C3E5C", // Sophisticated Navy
+          600: "#253550",
+          700: "#1E2C44",
+          800: "#172338",
+          900: "#101A2C",
+        },
+        // Paleta Verde Menta (kept for accent)
         mint: {
-          50: "#F5F9F7", // Verde Gelo
-          100: "#EAEFED", // Cinza Claro
+          50: "#F5F9F7",
+          100: "#EAEFED",
           200: "#D1E7E3",
           300: "#A7D5C9",
           400: "#7DDBBC",
-          500: "#5CCEA9", // Verde Menta
+          500: "#5CCEA9",
           600: "#4DB896",
-          700: "#2E7D64", // Verde Profundo
+          700: "#2E7D64",
           800: "#1F5749",
           900: "#133B31",
         },
-        // Paleta Azul Turquesa e Coral
+        // Paleta Azul Turquesa e Coral (kept for accent)
         aqua: {
-          50: "#F2F7F7", // Cinza Azulado
-          100: "#E6F4F1", // Turquesa Claro
+          50: "#F2F7F7",
+          100: "#E6F4F1",
           200: "#C7E8E3",
           300: "#9AD3D0",
           400: "#6CBEC1",
-          500: "#3BACB6", // Azul Turquesa
+          500: "#3BACB6",
           600: "#2E8A93",
           700: "#236970",
           800: "#1A4F54",
           900: "#123538",
           accent: "#FF7E67", // Coral Suave
         },
-        // Nova paleta principal
-        primary: {
-          50: "#EDEDF2",
-          100: "#DBDBE5",
-          200: "#B7B8CC",
-          300: "#9395B2",
-          400: "#6F7199",
-          500: "#30324B", // Cor principal
-          600: "#292A40",
-          700: "#222336",
-          800: "#1B1C2B",
-          900: "#141521",
-        },
-        borderRadius: {
-          lg: "var(--radius)",
-          md: "calc(var(--radius) - 2px)",
-          sm: "calc(var(--radius) - 4px)",
-        },
+      },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
       },
     },
   },

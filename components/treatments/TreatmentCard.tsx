@@ -16,13 +16,19 @@ export function TreatmentCard({ treatment }: TreatmentCardProps) {
   // Função para determinar o link do tratamento
   const getTreatmentLink = () => {
     if (treatment.id === "blefaroplastia") {
-      return "/tratamentos-cirurgicos/blefaroplastia"
+      return "/procedimentos/cirurgias-esteticas-faciais/blefaroplastia"
     } else if (treatment.id === "facelift") {
-      return "/tratamentos-cirurgicos/facelift"
+      return "/procedimentos/cirurgias-esteticas-faciais/facelift"
     } else if (treatment.id === "otoplastia") {
-      return "/tratamentos-cirurgicos/otoplastia"
+      return "/procedimentos/cirurgias-esteticas-faciais/otoplastia"
     } else if (treatment.id === "lipo-de-papada") {
-      return "/tratamentos-cirurgicos/lipo-de-papada"
+      return "/procedimentos/cirurgias-esteticas-faciais/lipo-de-papada"
+    } else if (treatment.id === "cirurgia-ortognatica") {
+      return "/procedimentos/cirurgias-esteticas-faciais/cirurgia-ortognatica"
+    } else if (treatment.id === "cervicoplastia") {
+      return "/procedimentos/cirurgias-esteticas-faciais/cervicoplastia"
+    } else if (treatment.id === "liplift") {
+      return "/procedimentos/cirurgias-esteticas-faciais/liplift"
     }
     return "#"
   }
@@ -32,7 +38,10 @@ export function TreatmentCard({ treatment }: TreatmentCardProps) {
     treatment.id === "blefaroplastia" ||
     treatment.id === "facelift" ||
     treatment.id === "otoplastia" ||
-    treatment.id === "lipo-de-papada"
+    treatment.id === "lipo-de-papada" ||
+    treatment.id === "cirurgia-ortognatica" ||
+    treatment.id === "cervicoplastia" ||
+    treatment.id === "liplift"
 
   // Determina o estilo de object-position com base no ID do tratamento
   const getObjectPosition = () => {
@@ -46,6 +55,9 @@ export function TreatmentCard({ treatment }: TreatmentCardProps) {
   const getImageExtension = () => {
     if (treatment.id === "lipo-de-papada" || treatment.id === "rinoplastia" || treatment.id === "lifting-facial") {
       return ".jpeg"
+    }
+    if (treatment.id === "cirurgia-ortognatica" || treatment.id === "cervicoplastia" || treatment.id === "liplift") {
+      return ".png"
     }
     return ".jpg"
   }

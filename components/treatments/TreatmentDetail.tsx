@@ -41,7 +41,7 @@ export function TreatmentDetail({
           ) : (
             <div className="relative h-80 sm:h-96 lg:h-[500px] rounded-lg overflow-hidden bg-gray-100">
               <Image
-                src={image || "/placeholder.svg"}
+                src={image || "/images/treatments/cirurgia-ortognatica.png"}
                 alt={title}
                 fill
                 className={imageContain ? "object-contain" : "object-cover object-center"}
