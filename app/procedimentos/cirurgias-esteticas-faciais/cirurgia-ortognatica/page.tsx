@@ -5,46 +5,36 @@ import { TreatmentDetail } from "@/components/treatments/TreatmentDetail"
 
 export default function CirurgiaOrtognaticaPage() {
   const formattedContent = (
-    <div className="prose prose-lg max-w-none">
-      <p className="font-semibold text-lg text-primary-500">
-        Correção de desequilíbrios ósseos nos maxilares para estética e função
-      </p>
+    <div className="space-y-6">
+      <div className="prose prose-lg max-w-none">
+        <p className="text-gray-700 leading-relaxed text-lg mb-6">
+          A cirurgia ortognática corrige alterações ósseas nos maxilares que afetam a estética facial, a mordida e a
+          respiração. É indicada para quem sofre com desalinhamentos severos que não podem ser resolvidos apenas com o
+          uso de aparelho ortodôntico.
+        </p>
 
-      <p className="text-gray-700 leading-relaxed mb-6">
-        A Cirurgia Ortognática é um procedimento realizado para corrigir desequilíbrios ósseos nos maxilares, que afetam
-        tanto a estética facial quanto a função mastigatória, respiratória e fonatória. É indicada em casos de
-        discrepância entre a maxila e a mandíbula, que não podem ser solucionados apenas com o uso de aparelhos
-        ortodônticos.
-      </p>
-
-      <p className="text-gray-700 leading-relaxed mb-6">
-        Mais do que uma cirurgia estética, trata-se de uma abordagem funcional que realinha a estrutura óssea da face,
-        promovendo equilíbrio facial, melhora na mordida (oclusão), respiração, fala e qualidade de vida. O procedimento
-        é altamente planejado, envolvendo exames tridimensionais, simulações digitais e uma atuação integrada entre
-        cirurgião bucomaxilofacial e ortodontista.
-      </p>
-
-      <h3 className="text-xl font-bold text-primary-500 mt-8 mb-4">Casos tratados pela cirurgia ortognática</h3>
-      <ul className="list-disc pl-6 space-y-2 mb-8">
-        <li className="text-gray-700">Prognatismo mandibular (mandíbula muito projetada)</li>
-        <li className="text-gray-700">Retrognatismo (mandíbula ou maxila posicionadas para trás)</li>
-        <li className="text-gray-700">Mordida aberta ou cruzada</li>
-        <li className="text-gray-700">Assimetrias faciais</li>
-        <li className="text-gray-700">Apneia obstrutiva do sono de origem esquelética</li>
-      </ul>
-
-      <h3 className="text-xl font-bold text-primary-500 mt-8 mb-4">Recuperação e resultados</h3>
-      <p className="text-gray-700 leading-relaxed mb-6">
-        A recuperação é gradativa, com resultados progressivos e duradouros, que impactam positivamente não apenas a
-        estética facial, mas também a saúde geral e a autoestima do paciente.
-      </p>
-
-      <p className="text-gray-700 leading-relaxed font-medium">
-        <strong>
-          Nosso compromisso é oferecer um tratamento preciso, seguro e humanizado, com tecnologia de ponta e
-          acompanhamento multidisciplinar em todas as etapas do processo.
-        </strong>
-      </p>
+        <div className="mt-8">
+          <h3 className="text-xl font-bold text-primary-500 mb-4">Benefícios:</h3>
+          <div className="space-y-3">
+            <div className="flex items-start text-gray-700 text-lg">
+              <span className="text-primary-500 font-bold mr-3">-</span>
+              <span>Melhora na mastigação e fala</span>
+            </div>
+            <div className="flex items-start text-gray-700 text-lg">
+              <span className="text-primary-500 font-bold mr-3">-</span>
+              <span>Harmonia facial e estética do sorriso</span>
+            </div>
+            <div className="flex items-start text-gray-700 text-lg">
+              <span className="text-primary-500 font-bold mr-3">-</span>
+              <span>Correção de apneia do sono em alguns casos</span>
+            </div>
+            <div className="flex items-start text-gray-700 text-lg">
+              <span className="text-primary-500 font-bold mr-3">-</span>
+              <span>Aumento da autoestima e qualidade de vida</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 
@@ -53,7 +43,7 @@ export default function CirurgiaOrtognaticaPage() {
       <Navigation />
       <TreatmentDetail
         title="Cirurgia Ortognática"
-        description="A Cirurgia Ortognática é um procedimento que corrige desequilíbrios ósseos nos maxilares, afetando tanto a estética facial quanto a função mastigatória, respiratória e fonatória."
+        description="A cirurgia ortognática corrige alterações ósseas nos maxilares que afetam a estética facial, a mordida e a respiração."
         image="/images/treatments/cirurgia-ortognatica.png"
         formattedContent={formattedContent}
         useSticky={true}

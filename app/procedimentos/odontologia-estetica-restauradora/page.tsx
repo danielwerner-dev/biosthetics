@@ -24,10 +24,8 @@ Nosso compromisso é oferecer um atendimento ético, criterioso e tecnicamente a
           imageContain={true}
           useSticky={true}
         >
-          <div className="prose prose-lg max-w-none">
-            <h2 className="text-2xl font-semibold text-primary-500 mt-8 mb-4">
-              Excelência em Odontologia Estética em São Paulo
-            </h2>
+          <>
+            <h2 className="text-2xl font-semibold text-primary-500 mt-8 mb-4">Excelência em Odontologia Estética</h2>
             <p>
               Na Biosthetics, nossa abordagem à <strong>Odontologia Estética & Restauradora</strong> combina precisão
               técnica, tecnologia de ponta e um olhar artístico para criar sorrisos que não apenas parecem bonitos, mas
@@ -46,131 +44,103 @@ Nosso compromisso é oferecer um atendimento ético, criterioso e tecnicamente a
                 <li>Tecnologia digital avançada para diagnóstico preciso</li>
                 <li>Materiais de última geração importados</li>
                 <li>Resultados naturais e duradouros</li>
-                <li>Localização privilegiada em São Paulo</li>
+                <li>Localização privilegiada</li>
               </ul>
             </div>
 
-            <h3 className="text-xl font-semibold text-primary-500 mt-8 mb-4">
-              Nossos Tratamentos de Odontologia Estética
-            </h3>
-            <p>
-              Oferecemos uma gama completa de <strong>procedimentos estéticos dentários</strong> personalizados para
-              atender às necessidades específicas de cada paciente:
+            {/* LISTA DE PROCEDIMENTOS - INÍCIO */}
+            <h2 className="text-2xl font-semibold text-primary-500 mt-12 mb-6">Nossos Procedimentos Odontológicos</h2>
+            <p className="mb-6">
+              Na Biosthetics, oferecemos uma ampla gama de procedimentos odontológicos estéticos e restauradores, cada
+              um deles realizado com a mais alta precisão e cuidado personalizado. Conheça nossas principais
+              especialidades:
             </p>
 
-            <div className="grid md:grid-cols-2 gap-6 my-8">
-              <div className="border border-gray-200 rounded-lg p-6">
-                <h4 className="text-lg font-semibold text-primary-600 mb-3">Facetas de Porcelana</h4>
-                <p className="text-sm">
-                  <strong>Lâminas ultrafinas de porcelana</strong> que cobrem a superfície frontal dos dentes,
-                  corrigindo forma, cor, tamanho e pequenos desalinhamentos. Ideal para transformação completa do
-                  sorriso.
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-xl font-semibold text-primary-600">1. Clareamento Dental</h3>
+                <p className="font-medium text-gray-700 italic mb-2">Sorriso mais branco e confiante!</p>
+                <p className="mb-2">
+                  Remova manchas e o amarelado dos dentes com segurança e tecnologia de ponta. Resultados visíveis em
+                  poucas sessões, com acompanhamento profissional.
                 </p>
-                <ul className="list-disc pl-4 mt-2 text-sm space-y-1">
-                  <li>Resistência superior e durabilidade</li>
-                  <li>Aparência natural e translúcida</li>
-                  <li>Mínimo desgaste dental</li>
-                </ul>
+                <div className="w-16 h-1 bg-primary-100 my-4"></div>
               </div>
 
-              <div className="border border-gray-200 rounded-lg p-6">
-                <h4 className="text-lg font-semibold text-primary-600 mb-3">Clareamento Dental Profissional</h4>
-                <p className="text-sm">
-                  <strong>Técnicas avançadas de clareamento dental</strong> para um sorriso mais branco e brilhante, com
-                  resultados duradouros e seguros.
+              <div>
+                <h3 className="text-xl font-semibold text-primary-600">2. Facetas de Porcelana ou Resina</h3>
+                <p className="font-medium text-gray-700 italic mb-2">Transforme seu sorriso em poucos dias.</p>
+                <p className="mb-2">
+                  Indicadas para corrigir forma, cor e pequenas imperfeições dentárias, as facetas são ideais para quem
+                  busca um sorriso harmônico e natural.
                 </p>
-                <ul className="list-disc pl-4 mt-2 text-sm space-y-1">
-                  <li>Clareamento a laser de última geração</li>
-                  <li>Resultados até 8 tons mais claros</li>
-                  <li>Procedimento seguro e indolor</li>
-                </ul>
+                <div className="w-16 h-1 bg-primary-100 my-4"></div>
               </div>
 
-              <div className="border border-gray-200 rounded-lg p-6">
-                <h4 className="text-lg font-semibold text-primary-600 mb-3">Restaurações Estéticas</h4>
-                <p className="text-sm">
-                  Utilizando <strong>resinas compostas de última geração</strong> que imitam perfeitamente a aparência
-                  natural dos dentes, substituindo restaurações antigas de amálgama.
+              <div>
+                <h3 className="text-xl font-semibold text-primary-600">3. Lentes de Contato Dental</h3>
+                <p className="font-medium text-gray-700 italic mb-2">Estética sutil, efeito surpreendente.</p>
+                <p className="mb-2">
+                  Finas lâminas de porcelana aplicadas sobre os dentes que oferecem resultados rápidos e naturais,
+                  perfeitas para pequenas correções estéticas.
                 </p>
-                <ul className="list-disc pl-4 mt-2 text-sm space-y-1">
-                  <li>Livre de mercúrio</li>
-                  <li>Estética superior</li>
-                  <li>Preservação da estrutura dental</li>
-                </ul>
+                <div className="w-16 h-1 bg-primary-100 my-4"></div>
               </div>
 
-              <div className="border border-gray-200 rounded-lg p-6">
-                <h4 className="text-lg font-semibold text-primary-600 mb-3">Lentes de Contato Dental</h4>
-                <p className="text-sm">
-                  <strong>Facetas ultrafinas</strong> que requerem mínimo ou nenhum desgaste dental, ideal para
-                  correções estéticas conservadoras e transformação do sorriso.
+              <div>
+                <h3 className="text-xl font-semibold text-primary-600">
+                  4. Restaurações Estéticas (em Resina Composta)
+                </h3>
+                <p className="font-medium text-gray-700 italic mb-2">Dentes bonitos e saudáveis novamente.</p>
+                <p className="mb-2">
+                  Substituímos restaurações antigas ou danificadas por materiais modernos, que imitam a cor natural dos
+                  dentes, garantindo estética e durabilidade.
                 </p>
-                <ul className="list-disc pl-4 mt-2 text-sm space-y-1">
-                  <li>Espessura de apenas 0,2mm</li>
-                  <li>Procedimento reversível</li>
-                  <li>Resultado imediato</li>
-                </ul>
-              </div>
-            </div>
-
-            <h3 className="text-xl font-semibold text-primary-500 mt-8 mb-4">
-              Design de Sorriso Digital - Planejamento Personalizado
-            </h3>
-            <div className="bg-blue-50 p-6 rounded-lg my-6">
-              <p>
-                Nosso <strong>design de sorriso digital</strong> utiliza tecnologia 3D avançada para criar um
-                planejamento computadorizado que permite visualizar o resultado final antes mesmo de iniciar o
-                tratamento. Esta tecnologia revolucionária garante:
-              </p>
-              <ul className="list-disc pl-6 space-y-2 mt-4">
-                <li>Previsibilidade total dos resultados</li>
-                <li>Participação ativa do paciente no planejamento</li>
-                <li>Redução do tempo de tratamento</li>
-                <li>Maior precisão nos procedimentos</li>
-              </ul>
-            </div>
-
-            <h3 className="text-xl font-semibold text-primary-500 mt-8 mb-4">Odontologia Restauradora Avançada</h3>
-            <p>
-              Nossa abordagem em <strong>odontologia restauradora</strong> vai além da estética, focando na
-              funcionalidade e saúde bucal a longo prazo:
-            </p>
-
-            <div className="space-y-4 mt-6">
-              <div className="border-l-4 border-primary-500 pl-4">
-                <h4 className="font-semibold text-primary-600">Coroas e Pontes Cerâmicas</h4>
-                <p className="text-sm mt-1">
-                  <strong>Restaurações personalizadas em cerâmica</strong> que devolvem forma e função a dentes
-                  comprometidos, com aparência totalmente natural e biocompatibilidade superior.
-                </p>
+                <div className="w-16 h-1 bg-primary-100 my-4"></div>
               </div>
 
-              <div className="border-l-4 border-primary-500 pl-4">
-                <h4 className="font-semibold text-primary-600">Inlays e Onlays Cerâmicos</h4>
-                <p className="text-sm mt-1">
-                  Restaurações cerâmicas precisas que substituem restaurações antigas com
-                  <strong> estética superior e maior durabilidade</strong>, preservando ao máximo a estrutura dental.
+              <div>
+                <h3 className="text-xl font-semibold text-primary-600">5. Sorriso Gengival (Gengivoplastia)</h3>
+                <p className="font-medium text-gray-700 italic mb-2">Mais harmonia ao seu sorriso.</p>
+                <p className="mb-2">
+                  Corrigimos o excesso de gengiva visível ao sorrir, com técnicas minimamente invasivas, melhorando a
+                  proporção entre dentes e gengiva.
                 </p>
+                <div className="w-16 h-1 bg-primary-100 my-4"></div>
               </div>
 
-              <div className="border-l-4 border-primary-500 pl-4">
-                <h4 className="font-semibold text-primary-600">Reabilitação Oral Completa</h4>
-                <p className="text-sm mt-1">
-                  <strong>Tratamento abrangente e multidisciplinar</strong> para casos complexos que necessitam de
-                  múltiplas intervenções restauradoras, devolvendo função mastigatória e estética.
+              <div>
+                <h3 className="text-xl font-semibold text-primary-600">6. Rejuvenescimento do Sorriso</h3>
+                <p className="font-medium text-gray-700 italic mb-2">Volte a sorrir com confiança!</p>
+                <p className="mb-2">
+                  Com o passar dos anos, o sorriso perde volume, cor e harmonia. Tratamentos restauradores e estéticos
+                  devolvem juventude e vitalidade ao seu sorriso.
                 </p>
+                <div className="w-16 h-1 bg-primary-100 my-4"></div>
               </div>
 
-              <div className="border-l-4 border-primary-500 pl-4">
-                <h4 className="font-semibold text-primary-600">Próteses sobre Implantes</h4>
-                <p className="text-sm mt-1">
-                  <strong>Soluções fixas para substituição de dentes perdidos</strong> com estética e funcionalidade
-                  ideais, utilizando implantes de titânio de última geração.
+              <div>
+                <h3 className="text-xl font-semibold text-primary-600">7. Contorno Estético Dental e Gengival</h3>
+                <p className="font-medium text-gray-700 italic mb-2">Detalhes que fazem toda a diferença.</p>
+                <p className="mb-2">
+                  Ajustes sutis no formato dos dentes e da gengiva que deixam o sorriso mais alinhado, harmonioso e
+                  atraente.
+                </p>
+                <div className="w-16 h-1 bg-primary-100 my-4"></div>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold text-primary-600">8. Planejamento Digital do Sorriso (DSD)</h3>
+                <p className="font-medium text-gray-700 italic mb-2">Visualize seu novo sorriso antes do tratamento.</p>
+                <p className="mb-2">
+                  Com tecnologia digital, planejamos o sorriso ideal para você, com previsibilidade e personalização,
+                  respeitando sua estética facial.
                 </p>
               </div>
             </div>
+            {/* LISTA DE PROCEDIMENTOS - FIM */}
 
-            <h3 className="text-xl font-semibold text-primary-500 mt-8 mb-4">
+            <h3 className="text-xl font-semibold text-primary-500 mt-12 mb-4">
               Tecnologia Digital em Odontologia Estética
             </h3>
             <p>
@@ -193,72 +163,6 @@ Nosso compromisso é oferecer um atendimento ético, criterioso e tecnicamente a
               </div>
             </div>
 
-            <h3 className="text-xl font-semibold text-primary-500 mt-8 mb-4">
-              Benefícios da Odontologia Estética na Biosthetics
-            </h3>
-            <div className="bg-green-50 p-6 rounded-lg my-6">
-              <div className="grid md:grid-cols-2 gap-4">
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>
-                    <strong>Resultados naturais e harmoniosos</strong>
-                  </li>
-                  <li>Procedimentos minimamente invasivos</li>
-                  <li>Materiais de alta qualidade e durabilidade</li>
-                  <li>Planejamento personalizado para cada paciente</li>
-                </ul>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>Melhora da autoestima e qualidade de vida</li>
-                  <li>Equipe especializada e constantemente atualizada</li>
-                  <li>Ambiente confortável e acolhedor</li>
-                  <li>Acompanhamento pós-tratamento</li>
-                </ul>
-              </div>
-            </div>
-
-            <h3 className="text-xl font-semibold text-primary-500 mt-8 mb-4">Cuidados Pós-Tratamento</h3>
-            <p>
-              Para garantir a <strong>longevidade dos tratamentos estéticos</strong>, fornecemos orientações detalhadas
-              de cuidados pós-tratamento:
-            </p>
-            <ul className="list-disc pl-6 space-y-2 mt-4">
-              <li>Higiene bucal adequada com produtos específicos</li>
-              <li>Consultas de manutenção regulares</li>
-              <li>Orientações alimentares personalizadas</li>
-              <li>Uso de protetor bucal quando necessário</li>
-              <li>Acompanhamento profissional contínuo</li>
-            </ul>
-
-            <h3 className="text-xl font-semibold text-primary-500 mt-8 mb-4">
-              Perguntas Frequentes sobre Odontologia Estética
-            </h3>
-            <div className="space-y-4 my-6">
-              <div className="border border-gray-200 rounded-lg p-4">
-                <h4 className="font-semibold text-primary-600 mb-2">Quanto tempo duram as facetas de porcelana?</h4>
-                <p className="text-sm">
-                  Com cuidados adequados, as <strong>facetas de porcelana</strong> podem durar de 15 a 20 anos, mantendo
-                  sua estética e funcionalidade.
-                </p>
-              </div>
-
-              <div className="border border-gray-200 rounded-lg p-4">
-                <h4 className="font-semibold text-primary-600 mb-2">O clareamento dental é seguro?</h4>
-                <p className="text-sm">
-                  Sim, quando realizado por profissionais qualificados, o{" "}
-                  <strong>clareamento dental profissional</strong>é totalmente seguro e não danifica o esmalte dental.
-                </p>
-              </div>
-
-              <div className="border border-gray-200 rounded-lg p-4">
-                <h4 className="font-semibold text-primary-600 mb-2">
-                  Qual a diferença entre facetas e lentes de contato dental?
-                </h4>
-                <p className="text-sm">
-                  As <strong>lentes de contato dental</strong> são mais finas (0,2mm) e requerem menos ou nenhum
-                  desgaste dental, enquanto as facetas tradicionais são ligeiramente mais espessas.
-                </p>
-              </div>
-            </div>
-
             <div className="bg-primary-50 p-6 rounded-lg my-8 text-center">
               <h3 className="text-xl font-semibold text-primary-600 mb-4">Transforme seu Sorriso na Biosthetics</h3>
               <p className="mb-4">
@@ -266,21 +170,16 @@ Nosso compromisso é oferecer um atendimento ético, criterioso e tecnicamente a
                 bem-estar e a autoconfiança. Nossa abordagem integrada à Odontologia Estética & Restauradora não apenas
                 transforma sorrisos, mas também melhora a saúde bucal e a qualidade de vida dos nossos pacientes.
               </p>
-              <p className="font-semibold text-primary-600">
-                Agende uma consulta de avaliação e descubra como podemos transformar seu sorriso com tratamentos
-                personalizados que combinam ciência, tecnologia e arte.
-              </p>
+              <a
+                href="https://wa.me/5551999763575?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20para%20odontologia%20estética"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-primary-500 hover:bg-primary-600 text-white font-medium py-3 px-6 rounded-md transition-colors mt-2"
+              >
+                Agendar Consulta
+              </a>
             </div>
-
-            <div className="mt-8 p-6 bg-gray-50 rounded-lg">
-              <h4 className="text-lg font-semibold text-primary-600 mb-3">Localização e Contato</h4>
-              <p className="text-sm">
-                A Biosthetics está localizada em <strong>São Paulo</strong>, oferecendo fácil acesso para pacientes de
-                toda a região metropolitana. Nossa clínica conta com infraestrutura moderna e equipamentos de última
-                geração para proporcionar o melhor em odontologia estética e restauradora.
-              </p>
-            </div>
-          </div>
+          </>
         </TreatmentDetail>
       </main>
       <Footer />

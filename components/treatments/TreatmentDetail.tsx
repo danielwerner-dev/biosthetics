@@ -26,11 +26,11 @@ export function TreatmentDetail({
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <Link
-          href="/tratamentos-cirurgicos"
+          href="/procedimentos"
           className="flex items-center text-primary-500 hover:text-primary-600 mb-6 transition-colors"
         >
           <ChevronLeft size={20} className="mr-1" />
-          <span>Voltar para Tratamentos Cirúrgicos</span>
+          <span>Voltar para Procedimentos</span>
         </Link>
 
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-500 mb-8">{title}</h1>
@@ -51,16 +51,17 @@ export function TreatmentDetail({
             </div>
           )}
 
-          <div className="space-y-2">
+          <div className="space-y-6">
             {formattedContent ? (
-              formattedContent
+              <div className="w-full">{formattedContent}</div>
             ) : (
               <div className="prose prose-lg max-w-none">
-                {description.split("\n\n").map((paragraph, index) => (
-                  <p key={index} className="text-gray-700 leading-relaxed mb-4">
-                    {paragraph.trim()}
-                  </p>
-                ))}
+                {description &&
+                  description.split("\n\n").map((paragraph, index) => (
+                    <p key={index} className="text-gray-700 leading-relaxed mb-4">
+                      {paragraph.trim()}
+                    </p>
+                  ))}
               </div>
             )}
 
