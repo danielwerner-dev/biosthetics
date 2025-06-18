@@ -36,9 +36,9 @@ export function ProfessionalsSection() {
         "Facetas de Porcelana",
         "Clareamento Dental",
         "Harmonização Facial",
-        "Toxina Botolínica",
+        "Toxina Botulínica",
       ],
-      profileLink: "/dra-milca-kley",
+      profileLink: "/dra-milca-heine",
     },
     {
       name: "Enf. Marco Gomez",

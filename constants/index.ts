@@ -39,7 +39,7 @@ export const NAV_LINKS: NavLink[] = [
     hasDropdown: true,
     dropdownItems: [
       { title: "DR. RICARDO HEINE", href: "/dr-ricardo-heine" },
-      { title: "DRA. MILCA HEINE", href: "/dra-milca-heine" },
+      { title: "DRA. MILCA KLEY SILVA", href: "/dra-milca-heine" },
       { title: "ENF. MARCO GOMEZ", href: "/enf-marco-gomez" },
     ],
   },

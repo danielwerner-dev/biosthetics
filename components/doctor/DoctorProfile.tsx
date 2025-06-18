@@ -1,16 +1,27 @@
 import Image from "next/image"
 import { DoctorSpecialties } from "./DoctorSpecialties"
+import type { ReactNode } from "react"
 
 interface DoctorProfileProps {
   name: string
   credentials: string
   image: string
   imageAlt: string
-  description?: string
+  description?: string | ReactNode
   specialties?: string[]
 }
 
 export function DoctorProfile({ name, credentials, image, imageAlt, description, specialties }: DoctorProfileProps) {
+  // Function to render description with proper paragraphs (only for strings)
+  const renderDescription = (text: string) => {
+    const paragraphs = text.split("\n\n").filter((p) => p.trim() !== "")
+    return paragraphs.map((paragraph, index) => (
+      <p key={index} className="text-gray-700 leading-relaxed mb-6">
+        {paragraph.trim()}
+      </p>
+    ))
+  }
+
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
@@ -39,7 +50,13 @@ export function DoctorProfile({ name, credentials, image, imageAlt, description,
 
               <div className="prose prose-lg max-w-none">
                 {description ? (
-                  <p className="text-gray-700 leading-relaxed mb-6">{description}</p>
+                  <div className="space-y-6">
+                    {typeof description === "string" ? (
+                      renderDescription(description)
+                    ) : (
+                      <div className="text-gray-700 leading-relaxed">{description}</div>
+                    )}
+                  </div>
                 ) : (
                   <>
                     <p className="text-gray-700 leading-relaxed mb-6">
@@ -60,7 +77,7 @@ export function DoctorProfile({ name, credentials, image, imageAlt, description,
               {/* Contact CTA */}
               <div className="pt-6">
                 <a
-                  href="https://wa.me/5551992997401"
+                  href="https://wa.me/5551999763575"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-primary-500 hover:bg-primary-600 text-white px-8 py-3 rounded-md transition-colors shadow-md font-medium text-lg"
