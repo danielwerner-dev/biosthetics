@@ -2,7 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Bioesthetics Odontologia - Estética - Restauradora | BIOSTHETICS",
+  title: "Bioesthetics Odontologia - Estética - Restauradora | BIOESTHETICS",
   description: "Excelência em Odontologia Estética e Restauradora. Transformamos sorrisos com técnica, arte e cuidado.",
 }
 

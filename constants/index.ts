@@ -4,15 +4,15 @@ import type { CarouselImage, ContactInfo, BusinessHours, NavLink, SocialMedia } 
 export const CAROUSEL_IMAGES: CarouselImage[] = [
   {
     src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/unnamed-F52GISMLHc1WtkyvglS3ZdxAywumW3.webp",
-    alt: "Biosthetics Clinic Entrance",
+    alt: "Bioesthetics Clinic Entrance",
   },
   {
     src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/unnamed1-pFe2AK1vyZjpN0sDxRSBBK3mlnBXmI.webp",
-    alt: "Biosthetics Treatment Room",
+    alt: "Bioesthetics Treatment Room",
   },
   {
     src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/unnamed2-eetSuqFGHbehjnNy1HwI88jwSPmD3y.webp",
-    alt: "Biosthetics Consultation Room",
+    alt: "Bioesthetics Consultation Room",
   },
 ]
 
@@ -20,7 +20,7 @@ export const CAROUSEL_IMAGES: CarouselImage[] = [
 export const CONTACT_INFO: ContactInfo = {
   phone: "(51) 3592-7824",
   mobile: "(51) 999763575",
-  email: "contato@biosthetics.com.br",
+  email: "contato@bioesthetics.com.br",
   address: "R. Bento Gonçalves, 806 - Andar B Sala 1 - Centro, São Leopoldo RS",
 }
 
@@ -32,7 +32,7 @@ export const BUSINESS_HOURS: BusinessHours = {
 
 // Links de navegação
 export const NAV_LINKS: NavLink[] = [
-  { title: "BIOSTHETICS", href: "/biosthetics" },
+  { title: "BIOESTHETICS", href: "/bioesthetics" },
   {
     title: "PROFISSIONAIS",
     href: "#",
@@ -68,7 +68,7 @@ export const SOCIAL_MEDIA: SocialMedia[] = [
 
 // Configurações do site
 export const SITE_CONFIG = {
-  name: "BIOSTHETICS",
+  name: "BIOESTHETICS",
   description: "Odontologia Estética e Restauradora",
   developer: "DW Consultoria",
   whatsappNumber: "5551999763575",

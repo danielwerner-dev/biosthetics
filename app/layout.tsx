@@ -7,7 +7,7 @@ import "./globals.css"
 import { Suspense } from "react"
 
 export const metadata: Metadata = {
-  title: "BIOSTHETICS - Estética Avançada e Bem-estar",
+  title: "BIOESTHETICS - Estética Avançada e Bem-estar",
   description: "Tratamentos estéticos avançados e soluções personalizadas para realçar sua beleza natural",
   generator: "v0.dev",
   keywords: [
@@ -16,11 +16,11 @@ export const metadata: Metadata = {
     "odontologia estética",
     "harmonização facial",
     "tratamentos estéticos",
-    "biosthetics",
+    "bioesthetics",
   ],
-  authors: [{ name: "BIOSTHETICS" }],
-  creator: "BIOSTHETICS",
-  publisher: "BIOSTHETICS",
+  authors: [{ name: "BIOESTHETICS" }],
+  creator: "BIOESTHETICS",
+  publisher: "BIOESTHETICS",
   robots: {
     index: true,
     follow: true,
@@ -44,22 +44,22 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: "https://biosthetics.com.br",
-    title: "BIOSTHETICS - Estética Avançada e Bem-estar",
+    url: "https://bioesthetics.com.br",
+    title: "BIOESTHETICS - Estética Avançada e Bem-estar",
     description: "Tratamentos estéticos avançados e soluções personalizadas para realçar sua beleza natural",
-    siteName: "BIOSTHETICS",
+    siteName: "BIOESTHETICS",
     images: [
       {
         url: "/favicon.png",
         width: 192,
         height: 192,
-        alt: "BIOSTHETICS Logo",
+        alt: "BIOESTHETICS Logo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "BIOSTHETICS - Estética Avançada e Bem-estar",
+    title: "BIOESTHETICS - Estética Avançada e Bem-estar",
     description: "Tratamentos estéticos avançados e soluções personalizadas para realçar sua beleza natural",
     images: ["/favicon.png"],
   },
