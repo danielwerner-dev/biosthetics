@@ -1,6 +1,10 @@
 import type React from "react"
 import type { Metadata } from "next"
+import { SafeAnalyticsProvider } from "@/components/providers/SafeAnalyticsProvider"
+import { SafeAnalytics, SafeSpeedInsights } from "@/components/analytics/AnalyticsComponents"
+import { AnalyticsToast } from "@/components/ui/AnalyticsToast"
 import "./globals.css"
+import { Suspense } from "react"
 
 export const metadata: Metadata = {
   title: "BIOSTHETICS - Estética Avançada e Bem-estar",
@@ -50,7 +54,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body>{children}</body>
+      <body>
+        <SafeAnalyticsProvider>
+          <Suspense fallback={null}>{children}</Suspense>
+        </SafeAnalyticsProvider>
+        <AnalyticsToast />
+        <SafeAnalytics />
+        <SafeSpeedInsights />
+      </body>
     </html>
   )
 }

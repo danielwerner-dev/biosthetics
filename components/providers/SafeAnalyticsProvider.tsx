@@ -1,52 +1,56 @@
 "use client"
 
 import type React from "react"
-import { useEffect } from "react"
-import { usePathname, useSearchParams } from "next/navigation"
+import { useEffect, useState } from "react"
+import { usePathname } from "next/navigation"
 
-// Safe analytics tracking function with conditional visual indicator
-const trackEvent = (eventName: string, properties?: Record<string, any>) => {
-  // Track with Vercel Analytics if available
-  if (typeof window !== "undefined") {
-    try {
-      // Use dynamic import to avoid build-time issues
-      import("@vercel/analytics")
-        .then(({ track }) => {
-          track(eventName, properties)
-        })
-        .catch((error) => {
-          console.warn("Vercel Analytics import failed:", error)
-        })
-    } catch (error) {
-      console.warn("Vercel Analytics tracking failed:", error)
+// Safe analytics tracking with proper error boundaries
+const trackEvent = async (eventName: string, properties?: Record<string, any>) => {
+  // Only run on client side
+  if (typeof window === "undefined") return
+
+  try {
+    // Dynamic import with proper error handling
+    const analytics = await import("@vercel/analytics")
+    if (analytics && analytics.track) {
+      analytics.track(eventName, properties)
     }
-
-    // Only dispatch custom event for visual indicator in development
+  } catch (error) {
+    // Silently fail in production, log in development
     if (process.env.NODE_ENV === "development") {
-      try {
-        const event = new CustomEvent("analytics-event", {
-          detail: { eventName, properties },
-        })
-        window.dispatchEvent(event)
-      } catch (error) {
-        console.warn("Custom event dispatch failed:", error)
-      }
+      console.warn("Analytics tracking failed:", error)
     }
   }
 
-  // Also log for debugging (only in development)
+  // Development logging and visual feedback
   if (process.env.NODE_ENV === "development") {
     console.log("Analytics Event:", eventName, properties)
+
+    // Dispatch custom event for visual feedback
+    if (typeof window !== "undefined") {
+      const event = new CustomEvent("analytics-event", {
+        detail: { eventName, properties },
+      })
+      window.dispatchEvent(event)
+    }
   }
 }
 
-export function AnalyticsProvider({ children }: { children: React.ReactNode }) {
+export function SafeAnalyticsProvider({ children }: { children: React.ReactNode }) {
   const pathname = usePathname()
-  const searchParams = useSearchParams()
+  const [isClient, setIsClient] = useState(false)
+
+  // Ensure we're on the client side
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
 
   useEffect(() => {
-    // Track page views with additional context
-    const url = pathname + (searchParams.toString() ? `?${searchParams.toString()}` : "")
+    if (!isClient) return
+
+    // Get search params on client side only
+    const searchParams = typeof window !== "undefined" ? window.location.search : ""
+    const url = pathname + searchParams
 
     // Determine page category
     let category = "general"
@@ -79,7 +83,7 @@ export function AnalyticsProvider({ children }: { children: React.ReactNode }) {
         trackEvent("professional_view", { professional })
       }
     }
-  }, [pathname, searchParams])
+  }, [pathname, isClient])
 
   return <>{children}</>
 }
